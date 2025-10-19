@@ -22,7 +22,8 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-
+    ports:
+      - 5432:5432
   n8n:
     image: docker.n8n.io/n8nio/n8n
     restart: always
